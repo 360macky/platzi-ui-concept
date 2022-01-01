@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--blue-01);
+  color: var(--grey-white);
+}
+
+:root {
+  --skyblue: #33b1ff;
+  --green: #98ca3f;
+  --grey-white: #eff3f8;
+  --blue-00: #0b1325;
+  --blue-01: #121f3d;
+  --blue-02: #24385b;
+  --blue-03: #637b9d;
+  --blue-04: #8da2c0;
+  --blue: #40587c;
+  --calendar-blue: rgb(7, 145, 230);
+  --calendar-green: rgb(152, 202, 63);
+  --calendar-red: rgb(255, 72, 66);
+  --calendar-orange: rgb(255, 127, 56);
+  --calendar-yellow: rgb(254, 204, 1);
+}
+
+.color-skyblue {
+  color: var(--skyblue);
+}
+
+.color-white {
+  color: var(--grey-white);
+}
+
+::selection {
+  background-color: var(--blue-02);
+}
+
+.HeaderContainer {
+  min-height: 160px;
+  width: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.SearchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchContainer input {
+  padding: 1rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  margin: 0;
+  border: 1px solid var(--blue-02);
+  font-size: 1rem;
+  background-color: var(--blue-01);
+  color: var(--grey-white);
+  outline: none;
+}
+
+.SearchButton {
+  background-color: var(--skyblue);
+  color: var(--blue-01);
+  border-radius: 12px;
+  font-size: 1rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  padding: 1rem;
+  border: 2px solid var(--skyblue);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.LegendCategories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+}
+
+.LegendCategories .CourseCard__Category {
+  margin-left: 0.5rem;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.LegendCategories .CourseCard__Category:hover {
+  transform: scale(1.09);
+}
+
+.CalendarContainer {
+  background-color: var(--blue-00);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.CourseCard {
+  background-color: var(--blue-02);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  width: 90%;
+  margin: 10px;
+}
+
+.CourseCard-head {
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  padding: 16px 16px 12px;
+  text-decoration: none;
+}
+
+.Courses {
+  display: flex;
+}
+
+.CourseCard-badge img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.CourseCard-title {
+  color: var(--grey-white);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.CourseCard__Head {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ShareTwitter {
+  margin-left: 0.5rem;
+}
+
+.CourseCard-teacher {
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: #8da2c0;
+  display: -webkit-box;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.CourseCard .NotifyMePremiere-button {
+  font-size: 0.875rem;
+  margin-left: 0;
+  padding: 8px 20px;
+  text-align: left;
+  text-transform: none;
+  width: 100%;
+}
+
+.CourseCard .NotifyMePremiere-button span {
+  display: flex;
+  align-items: center;
+}
+
+.CourseCard__Date {
+  font-weight: 300;
+  color: var(--skyblue);
+}
+
+.CourseCard-badge {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 16px;
+  min-height: 40px;
+  min-width: 40px;
+  width: 40px;
+}
+
+.CourseCard .NotifyMePremiere {
+  background-color: rgba(18, 31, 61, 0.5);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+
+.BellImage {
+  height: 1.25rem;
+}
+
+.NotifyMePremiere-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  min-width: 40px;
+  text-transform: uppercase;
+}
+
+.CourseCard__Category {
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: var(--grey-white);
+}
+
+.Category__Launching {
+  background-color: var(--calendar-blue);
+}
+
+.Category__LiveSessions {
+  background-color: var(--calendar-green);
+}
+
+.Category__Live {
+  background-color: var(--calendar-red);
+}
+
+.Category__Conf {
+  background-color: var(--calendar-orange);
+}
+
+.Category__Talk {
+  background-color: var(--calendar-yellow);
+}
+
+@media (min-width: 640px) {
+  .CourseCard {
+    width: 300px;
+  }
+  .CalendarContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem 10rem;
+    align-content: center;
+    height: 700px;
+  }
+  .SearchInput {
+    width: 500px;
+  }
+}
