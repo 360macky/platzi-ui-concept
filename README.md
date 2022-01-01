@@ -80,4 +80,6 @@ The labels for the 5 categories (Course launching, Live sessions, PlatziLive, Pl
 
 The **add to Google Calendar** function is useful, but I would like to propose a replacement like **"Notify me premiere"**, this would immediately trigger an email to the student with the date (from here it can also be automatically added to Google Calendar), and with another future email notification when the course is available.
 
+![](./.github/calendar/calendar_card.gif)
+
 The Twitter share button is also available at the top right of the event card.
