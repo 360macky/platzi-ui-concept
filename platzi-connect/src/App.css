@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+body {
+  background-color: #121f3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --skyblue: #33b1ff;
+  --green: #98ca3f;
+  --grey-white: #eff3f8;
+  --blue-00: #0b1325;
+  --blue-01: #121f3d;
+  --blue-02: #24385b;
+  --blue-03: #637b9d;
+  --blue-04: #8da2c0;
+  --blue: #40587c;
+}
+
+.Header {
+  min-height: 360px;
+  background-color: var(--blue-00);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Header__Image {
+  width: 60%;
+}
+
+.Header input {
+  padding: 1rem;
+  border-radius: 1rem 0rem 0rem 0rem;
+  margin: 0;
+  border: 1px solid var(--blue-02);
+  font-size: 1rem;
+  background-color: var(--blue-01);
+  color: var(--grey-white);
+  outline: none;
+  width: 180px;
+}
+
+.Header input:hover {
+  border: 1px solid var(--blue-03);
+}
+
+.Header input:focus {
+  border: 1px solid var(--skyblue);
+}
+
+.Header select {
+  color: var(--grey-white);
+  padding: 1rem;
+  margin: 0;
+  border: 1px solid var(--blue-02);
+  font-size: 1rem;
+  background-color: var(--blue-02);
+  cursor: pointer;
+  border-radius: 0rem 1rem 0rem 0rem;
+  width: 140px;
+}
+
+.Header__Form {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.Header__SearchButton {
+  background-color: var(--skyblue);
+  color: var(--blue-01);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+  padding: 1rem;
+  border: 2px solid var(--skyblue);
+  font-weight: bolder;
+  cursor: pointer;
+  width: calc(140px + 180px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.Result {
+  width: 100%;
+  background-color: var(--blue-02);
+  border-radius: 12px;
+  color: var(--grey-white);
+  padding: 0.6rem 0;
+  margin: 0.4rem;
+}
+
+.Result h2 {
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+  margin-top: 0.2rem;
+  display: inline;
+}
+
+.Result h3 {
+  font-weight: normal;
+}
+
+.Result p {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.Result__CourseBadgeImage {
+  width: 24px;
+  margin-left: 6px;
+}
+
+.Result__CourseBadges {
+  text-align: right;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.ConnectButtonContainer {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+.ConnectButton {
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--skyblue);
+  color: var(--skyblue);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.Result__Head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SaveIcon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.8rem;
+  margin-top: 0.8rem;
+  display: inline;
+  cursor: pointer;
+  transition-property: transform;
+  transition-timing-function: ease;
+  transition-duration: 300ms;
+}
+
+.SaveIcon:hover {
+  transform: scale(1.5);
+}
+
+.SaveIcon--saved {
+  fill: var(--skyblue);
+}
+
+.SaveIcon--unsaved {
+  fill: var(--grey-white);
+}
+
+.Result__PreviewImage {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.ConnectButton:hover {
+  background-color: var(--skyblue);
+  color: var(--blue-01);
+}
+
+@media (min-width: 640px) {
+  .Header__Image {
+    width: 400px;
+  }
+  .Header__Form input {
+    width: 400px;
+    border-radius: 1rem 0rem 0rem 1rem;
+  }
+  .Header__Form select {
+    border-radius: 0;
+  }
+  .Header__SearchButton {
+    width: auto;
+    border-radius: 0rem 1rem 1rem 0rem;
+  }
+  .Result {
+    width: 30%;
+  }
+  .Content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

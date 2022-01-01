@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Pokedex",
+        "image": "https://static.platzi.com/media/porfilio/imagen-pokedex_e9130dd1-3a16-4c80-8f46-2e206520e42d.jpg",
+        "description": "Una aplicación básica desarrollada para la plataforma Android y utilizando Kotlin como lenguaje de programación.",
+        "courses": ["JavaScript", "HTML", "React", "English"],
+        "link": "https://github.com/maxeziowolf/Pokedex"
+    }
+]
