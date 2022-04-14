@@ -6,7 +6,7 @@
     alt="SpaceX Search"
     title="SpaceX Search"
   />
-  <h1 align="center">Platzi UI proposals/enhancements</h1>
+  <h1 align="center">Platzi UI Concept</h1>
 </p>
 
 <p align="center">
